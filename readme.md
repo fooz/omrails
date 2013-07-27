@@ -1,3 +1,3 @@
 # one month rails
 
-blah blah this is tedious
+this is a test project for om rails
