@@ -6,7 +6,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   # attr_accessible :title, :body
   # MassAssignmentSecurity Error fix
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :provider, :uid, :as => [:default, :admin]
   # Makes sure all users have names
-  validates_presence_of :name
+  # validates_presence_of :name
+  # validates_uniqueness_of :name
 end
