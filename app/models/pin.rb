@@ -3,6 +3,6 @@ class Pin < ActiveRecord::Base
 
   validates :description, presence: true, length: { :minimum => 2 }
 
-  belongs_to :user
+   belongs_to :user
   validates :user_id, presence: true
 end
